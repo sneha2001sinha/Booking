@@ -8,9 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-//builder.Services.AddDbContext<UsersDbContext>(options => {
-  //  options.UseNpgsql(builder.Configuration.GetConnectionString("Server=localhost;Port=5432;Database=PostgreSQL15;User Id=postgres;Password=Sneha981;"));
-//});
 
 builder.Services.AddDbContext<UsersDbContext>(options =>
 {
